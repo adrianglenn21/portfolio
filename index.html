@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
 </head>
 <body class="bg-secondary">
@@ -27,12 +28,24 @@
 				<p class="mt-4">
 					I'm a BS in Information Technology graduate and I learned some technologies that can able to help my future clients and employer. I have some experiences to freelancing such as Web Development (PHP & PYTHON).
 				</p>
-				<button class="btn btn-secondary shadow m-1">DOWNLOAD CV</button>
-				<button class="btn btn-secondary shadow m-1">CONTACT ME</button>
+				<button id="btn_download_resume" class="btn btn-secondary shadow m-1">DOWNLOAD CV</button>
 			</div>
 		</div>
 	</div>
-
+	<div class="container bg-light rounded p-5 mb-5 shadow-lg">
+		<div class="text-center">
+			<h5>WORK EXPERIENCE</h5>
+			<div class="mt-5">
+				<h6>PHP - Developer</h6>
+				<p class="text-muted">With Jquery, Ajax, MYSQL, SVN</p>
+				<h6>Python Flask - Developer</h6>
+				<p class="text-muted">With Mysql, SQL-Alchemy, Javascript, Ajax, 
+					<br> W3.CSS, CSS - TAILWIND, GIT, Ubuntu 20.6.0, 
+					<br> Digital Ocean Droplet, SSH
+				</p>
+			</div>
+		</div>
+	</div>
 	<div class="container bg-light rounded p-5 mb-5 shadow-lg">
 		<div class="text-center">
 			<h5>SKILLS</h5>
@@ -138,5 +151,10 @@
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('#btn_download_resume').click(function(e) {
+		    window.location.href = 'resume.docx';
+		});
+	</script>
 </body>
 </html>
