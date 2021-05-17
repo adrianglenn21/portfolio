@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+	.div_container > .row {
+		display: grid;
+		grid-template-columns: auto;
+		width: auto;
+	}
+
+
+	.div_container{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+}
